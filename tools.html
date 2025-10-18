@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Tools & Calculators - Aspire Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container main-header">
+            <a href="index.html" class="logo">ASPIRE <span>REAL ESTATE</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="agents.html">Our Agents</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="tools.html" class="active">Tools</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: linear-gradient(rgba(26, 58, 95, 0.75), rgba(26, 58, 95, 0.75)), url('images/header-tools.jpg');">
+            <h1>Property Tools & Calculators</h1>
+            <p>Empower your property decisions with our suite of essential financial calculators. Plan your budget, understand your costs, and invest with confidence.</p>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid">
+                    <!-- Bond Repayment Calculator -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-calculator"></i> Bond Repayment</h3>
+                            <p>Calculate your estimated monthly bond repayments based on the loan amount, interest rate, and repayment term.</p>
+                            <form id="bond-repayment-form">
+                                <div class="form-group"><label for="loan-amount">Purchase Price (R)</label><input type="number" id="loan-amount" placeholder="e.g. 2000000" required></div>
+                                <div class="form-group"><label for="deposit-amount">Deposit (Optional) (R)</label><input type="number" id="deposit-amount" placeholder="e.g. 200000"></div>
+                                <div class="form-group"><label for="interest-rate">Interest Rate (%)</label><input type="number" id="interest-rate" step="0.01" placeholder="e.g. 11.75" required></div>
+                                <div class="form-group"><label for="loan-term">Loan Term (Years)</label><select id="loan-term"><option value="20">20 Years</option><option value="25">25 Years</option><option value="30">30 Years</option></select></div>
+                                <button type="submit" class="btn" style="width:100%;">Calculate Repayment</button>
+                            </form>
+                            <p id="bond-repayment-result"></p>
+                        </div>
+                    </div>
+
+                    <!-- Bond Affordability Calculator -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-wallet"></i> Bond Affordability</h3>
+                            <p>Determine the maximum home loan amount you could qualify for based on your gross income and monthly expenses.</p>
+                            <form id="affordability-form">
+                                <div class="form-group"><label for="gross-income">Gross Monthly Income (Before Tax) (R)</label><input type="number" id="gross-income" placeholder="e.g. 50000" required></div>
+                                <div class="form-group"><label for="monthly-expenses">Total Monthly Debt Obligations (R)</label><input type="number" id="monthly-expenses" placeholder="e.g. car, loans, credit cards"></div>
+                                <button type="submit" class="btn" style="width:100%;">Calculate Affordability</button>
+                            </form>
+                            <p id="affordability-result"></p>
+                        </div>
+                    </div>
+
+                    <!-- Transfer Cost Calculator -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-file-invoice-dollar"></i> Transfer Costs</h3>
+                            <p>Calculate the estimated transfer duty payable to SARS based on the property's purchase price. Note: This excludes attorney fees.</p>
+                            <form id="transfer-cost-form">
+                                <div class="form-group"><label for="property-value">Purchase Price of Property (R)</label><input type="number" id="property-value" placeholder="e.g. 2500000" required></div>
+                                <div class="form-group"><label>Purchaser Type</label><select><option>Natural Person</option><option>Legal Entity</option></select></div>
+                                <button type="submit" class="btn" style="width:100%;">Calculate Costs</button>
+                            </form>
+                            <p id="transfer-cost-result"></p>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 50px; text-align: center;">
+                    <h3>Need Professional Financial Advice?</h3>
+                    <p>Our in-house bond originators can help you secure the best interest rate from all major banks.</p>
+                    <a href="contact.html" class="btn">Contact a Bond Specialist</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-col footer-logo-section"><h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="fill: var(--color-secondary);"><path d="M12 2L2 7V21H22V7L12 2ZM19 19H5V8.23L12 4.45L19 8.23V19Z" /><path d="M10 13H14V19H10V13Z" /></svg> Aspire Real Estate</h3><p>Built on Trust. Focused on Your Legacy.</p><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div><div class="footer-col"><h3>Quick Links</h3><ul><li><a href="properties.html">Search Properties</a></li><li><a href="agents.html">Our Agents</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></div><div class="footer-col"><h3>Services</h3><ul><li><a href="#">Property Valuation</a></li><li><a href="#">Market Analysis</a></li><li><a href="#">Investment Advice</a></li><li><a href="#">Property Management</a></li></ul></div><div class="footer-col"><h3>Contact</h3><div class="footer-contact-item"><i class="fas fa-phone"></i> +27 31 563 4444</div><div class="footer-contact-item"><i class="fas fa-envelope"></i> info@aspirere.co.za</div><div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Multiple locations across KZN</div></div></div><div class="footer-bottom"><div class="footer-accreditations"><img src="images/tpn-logo.png" alt="TPN Credit Bureau"><img src="images/proudly-sa-logo.png" alt="Proudly South African"></div><div class="footer-copyright">© 2025 Aspire Real Estate Group. All rights reserved.</div></div></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
